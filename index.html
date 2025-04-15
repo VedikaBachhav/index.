@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Design Practicals</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2c3e50;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin: 0 10px;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .intro-marquee {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .intro-marquee span {
+      display: block;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.6rem;
+      color: #34495e;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      list-style-type: none;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .card ul li a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .card ul li a:hover {
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1rem;
+    }
+
+    footer h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        padding: 10px 20px;
+      }
+
+      .card h3 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        padding: 8px 15px;
+        font-size: 1rem;
+      }
+
+      footer p {
+        font-size: 0.8rem;
+      }
+
+      .intro-marquee {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Design Practicals</h1>
+    <p>Learn essential web design skills with practical examples</p>
+  </header>
+
+  <nav>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/" target="_blank">MET Poly</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/information-technology/" target="_blank">IT Dept.</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-vision-mission/" target="_blank">Dept. Vision</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-faculty/" target="_blank">Staff</a>
+  </nav>
+
+  <div class="intro-marquee">
+    <span>MET BKC IOT Poly IT Department</span>
+    <span>Created By: Mr.Sanchit Ganesh Sutar</span>
+  </div>
+
+  <div class="main">
+    <div class="card-container">
+      <div class="card">
+        <img src="https://txon.in/assets/img/htmlintro.png" alt="HTML Introduction">
+        <div class="card-content">
+          <h3>Introduction to HTML</h3>
+          <ul>
+            <li><a href="1.html">Prac 1</a> - Basic HTML tags</li>
+            <li><a href="2.html">Prac 2</a> - Heading tags</li>
+            <li><a href="3.html">Prac 3</a> - Paragraph in web page</li>
+            <li><a href="4.html">Prac 4</a> - Block level tags</li>
+            <li><a href="5.html">Prac 5</a> - Text level tag</li>
+            <li><a href="6.htm">Prac 6</a> - Border Properties</li>
+            <li><a href="7.html">Prac 7</a> - Special characters</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.tutorialbrain.com/wp-content/uploads/2019/02/Links-in-HTML-1.jpg" alt="Links in HTML">
+        <div class="card-content">
+          <h3>Lists and Links</h3>
+          <ul>
+            <li><a href="8.html">Prac 8</a> - Ordered & Unordered lists</li>
+            <li><a href="9.html">Prac 9</a> - Different list types</li>
+            <li><a href="10.html">Prac 10</a> - Web page link</li>
+            <li><a href="11.html">Prac 11</a> - Links in web page</li>
+            <li><a href="12.html">Prac 12</a> - Links with images</li>
+            <li><a href="13.html">Prac 13</a> - Colors for links</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.gavick.com/documentation/wp-content/uploads/2013/09/colors-table.png" alt="Colors and Backgrounds">
+        <div class="card-content">
+          <h3>Images, Colors and Background</h3>
+          <ul>
+            <li><a href="14.html">Prac 14</a> - Foreground and background images</li>
+            <li><a href="15.html">Prac 15</a> - Image with hyperlink</li>
+            <li><a href="16.html">Prac 16</a> - Background properties</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://trainings.internshala.com/blog/wp-content/uploads/2023/07/Frames-in-html-1-1536x640.jpg" alt="HTML Forms and Tables">
+        <div class="card-content">
+          <h3>Table, Frames and Forms</h3>
+          <ul>
+            <li><a href="17.html">Prac 17</a> - Table in web page</li>
+            <li><a href="18.html">Prac 18</a> - Nested tables & images</li>
+            <li><a href="19.html">Prac 19</a> - Table row/column attributes</li>
+            <li><a href="20.html">Prac 20</a> - Frames</li>
+            <li><a href="21.html">Prac 21</a> - HTML Forms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/vzZ7TXGIQ3Y/hq720.jpg" alt="CSS Introduction">
+        <div class="card-content">
+          <h3>Cascading Style Sheets</h3>
+          <ul>
+            <li><a href="22.html">Prac 22</a> - CSS stylesheets</li>
+            <li><a href="23.html">Prac 23</a> - Responsive Web Design</li>
+            <li><a href="24.html">Prac 24</a> - Hosting website on open source</li>
+            <li><a href="25.html">Prac 25</a> - Portfolio website</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h2>Learn, Practice, and Improve</h2>
+    <p>&copy; 2025 MET BKC IOT Poly IT Department</p>
+  </footer>
+
+</body>
+</html>
